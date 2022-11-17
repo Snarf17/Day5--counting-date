@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background: rgb(217, 223, 224);
+    /* background: #000; */
     font-family: sans-serif;
 }
 
@@ -136,7 +137,7 @@ nav ul li a{
     justify-content: center;
     /* text-align: center; */
 }
-form h3{
+form h2{
     text-align: center;
     padding: 20px;
 }
@@ -156,27 +157,29 @@ input, textarea, select{
     border: none;
     box-shadow: 1px 1px 5px 0px black;
 }
-form .button{
+form .btn{
     width: 100%;
+    /* width: 20%; */
     /* background: red; */
     display: flex;
     justify-content: end;
 }
-form a{
+form button{
+    border: none;
     text-decoration: none;
     background: orangered;
-    padding: 8px 18px;
+    padding: 10px 20px;
     border-radius: 15px;
     color: #fff;
     transition: 0.2s;
+    cursor: pointer;
 }
-form a:hover{
+form button:hover{
     background: none;
     border: 1px solid orangered;
     /* padding: 7px 19px; */
     color: #000;
-
 }
-form a:active{
+form button:active{
     color: orangered;
 }
