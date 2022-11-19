@@ -44,7 +44,6 @@ nav ul li a{
     border: 1px solid orangered;
     padding: 7px 19px;
     color: #000;
-
 }
 .btn-contact:active{
     color: orangered;
@@ -52,134 +51,215 @@ nav ul li a{
 /* End Button In Navbar */
 /* End Navbar */
 
-/* Content */
-.container{
-    width: 80%;
-    display: flex;
-    margin: 50px auto;
-    padding: 55px;
-    justify-content: space-around;
-    background: #fff;
-    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
-    border-radius: 5px;
-
-}
-.col{
-    width: 50%;
-    /* align-self: center; */
-    line-height: 20px;
-}
-.atribute{
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background: red; */
-    margin-bottom: 25px;
-    
-}
-.atribute a{
-    text-decoration: none;
-    background: orangered;
-    padding: 8px 18px;
-    border-radius: 15px;
-    color: #fff;
-    transition: 0.2s;
-}
-.atribute a:hover{
-    background: none;
-    border: 1px solid orangered;
-    /* padding: 7px 19px; */
-    color: #000;
-
-}
-.atribute a:active{
-    color: orangered;
-}
-.atribute img{
-    align-self: center;
-    width: 22px;
-}
-.card{
-    align-self: center;
-    background: #fff;
-    box-shadow: 1px 1px 3px black;
-    border-radius: 10px;
-    /* width: 350px; */
-    padding-bottom: 25px;
-    text-align: center;
-}
-.card img{
-    width: 300px; 
-    height:290px;   
-    object-fit: cover;
-    filter: blur(2px);
-}
-.card img:hover{
-    filter: none;
-}
-.text-card{
-    line-height: 2px;
-}
-.text-card span{
-    font-size: 13px;
-    color: grey;
-}
-/* End content */
-
-/* FORM */
+/* Form */
 .container-form{
     width: 80%;
     margin: auto;
-    padding: 30px;
+    padding: 12px;
     /* background: salmon; */
-    display: flex;
-    justify-content: center;
-    /* text-align: center; */
-}
-form h2{
-    text-align: center;
-    padding: 20px;
 }
 form{
+    /* width: 100%; */
+    /* background-color: #fff; */
     display: flex;
-    /* text-align: left; */
     flex-direction: column;
-    width: 40%;
+    align-items: center;
 }
-label{
-    padding-bottom: 5px;
+.wrap-input{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
-input, textarea, select{
+.wrap-input > input{
     padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
     border: none;
-    box-shadow: 1px 1px 5px 0px black;
+    border-radius: 2px;
+    font-size: 15px;
+    /* background: grey; */
 }
-form .btn{
-    width: 100%;
-    /* width: 20%; */
-    /* background: red; */
+.wrap-input label{
+    margin-bottom: 5px;
+}
+.wrap-input-date{
+    width: 30%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+.wrapper-date{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-date label{
+    margin-bottom: 5px;
+}
+.wrapper-date input{
+    width: 140px;
+    padding: 7px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.wrap-checkbox{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    margin-bottom: 15px;
+}
+.wrap-checkbox label{
+    margin-bottom: 10px;
+}
+.wrap-input textarea{
+    width: 100%; 
+    height: 150px;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Button */
+.btn{
+    width: 30%;
+    /* background: salmon; */
     display: flex;
     justify-content: end;
 }
-form button{
+.btn button{
     border: none;
-    text-decoration: none;
+    border-radius: 20px;
+    padding: 7px 13px;
     background: orangered;
-    padding: 10px 20px;
-    border-radius: 15px;
     color: #fff;
-    transition: 0.2s;
+    transition: 0.1s;
     cursor: pointer;
 }
-form button:hover{
+.btn button:hover{
     background: none;
     border: 1px solid orangered;
-    /* padding: 7px 19px; */
     color: #000;
 }
-form button:active{
+.btn button:active{
     color: orangered;
 }
+.line{
+    width: 80%;
+    margin: 50px auto;
+    /* border: none; */
+    opacity: 15%;
+}
+
+/* My Project */
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff;
+}
+.container h2{
+    align-self: center;
+}
+.myproject{
+    display: flex;
+    justify-content: start;
+    width: 70%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.card{
+    width: 280px;
+    background: #fff;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px black;
+    /* padding: 1px; */
+}
+.article{
+    padding: 0px 7px;
+    /* line-height: 0px; */
+}
+.article span{
+    top: 0;
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.article h1{
+    font-size: 16px;
+    line-height: 1px;
+}
+.btn-card{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    /* background: red; */
+}
+.btn-card a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 40px;
+    background: rgb(49, 47, 47);
+    border-radius: 20px;
+}
+.icon{
+    padding: 10px;
+}
+
+/* Main Web Apps */
+main{
+    width: 70%;
+    margin: auto;
+    /* background: rgb(247, 238, 238); */
+    padding: 1px 50px;
+}
+main h2{
+    text-align: center;
+}
+.main-info{
+    display: flex;
+    margin-bottom: 40px;
+    /* justify-content: center; */
+}
+.main-info img{
+    padding-top: 12px;
+}
+.wrapper-info{
+    display: flex;
+    padding: 0px 50px;
+    flex-direction: column;
+    /* background: red; */
+    /* text-align: left; */
+}
+
+.wrapper-info .span-time > div {
+    display: flex; 
+    align-items: center;
+    gap: 12px;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+}
+.wrapper-info .span-time img{
+    margin-top: -12px;
+    /* margin-right: 12px; */
+}
+.wrapper-info .tech-info{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin-right: 12px; */
+}
+.wrapper-info .tech-info > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 12px;
+}
+.wrapper-info .tech-info > div img {
+    margin-top: -12px;
+}
+.wrapper-info .tech-info > div span{
+    margin-right: 20px;
+}
+

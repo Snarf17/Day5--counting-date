@@ -15,7 +15,7 @@
         <ul>
             <li><img src="img/logo.png" width="55px"></li>
             <li><a href="index.html" class="active" style="color: orangered">Home</a></li>
-            <li><a href="form.html">My Project</a></li>
+            <li><a href="project-details.html">My Project</a></li>
         </ul>
         <a href="#" class="btn-contact">Contact Me</a>        
     </nav>
@@ -23,38 +23,81 @@
 
     <div class="container-form">
         <!-- <center> -->
-            <form>
+            <form onsubmit="addProject(event)">
                 <h2>GET IN <span style="color: orangered;">TOUCH</span> </h2>   
-                <label>Name</label>
-                <input type="text" id="name" name="name" placeholder="Input your name..." required>
-                <!-- <div id="name_error" class="val_error"></div> -->
-    
-                <label>Email</label>
-                <input type="email" id="email" name="email" placeholder="Please input your Email..." required>
-                <!-- <div id="name_error" class="val_error"></div> -->
-    
-                <label>Phone Number</label>
-                <input type="number" id="number" name="number" placeholder="Input your number phone..." required>
-                <!-- <div id="name_error" class="val_error"></div> -->
-    
-                <label>Subject</label>
-                <select id="subject" required>
-                    <option value="" disabled selected>-- Select --</option>
-                    <option value="FrontEnd">FrontEnd</option>
-                    <option value="backEnd">BackEnd</option>
-                    <option value="FullStack">FullStack</option>
-                </select>
-                <!-- <div id="name_error" class="val_error"></div> -->
-    
-                <label>Your Massage</label>
-                <textarea cols="30" rows="10" id="massage" name="massage" placeholder="What do you think..." required></textarea>
+
+            <div class="wrap-input">
+                <label>Name Project</label>
+                <input type="text" placeholder="Input your name..." id="nameProject"  value="test" required>
+            </div>    
+
+            <div class="wrap-input-date">
+                <div class="wrapper-date">
+                    <label>Start Date</label>
+                    <input type="date" placeholder="Please  input your Email..." id="startDate" required>
+                </div> 
+
+                <div class="wrapper-date">
+                    <label>End Date</label>
+                    <input type="date" placeholder="Please input your Email..." id="endDate" required>
+                </div>
+            </div>   
+
+            <div class="wrap-input">
+                <label>Description</label>
+                <textarea placeholder="What do you think..." id="desc" required></textarea>
+            </div>
+
+            <div class="wrap-checkbox">
+                <label for="">Technologies</label>
+                
+                <div class="check-1">
+                    <input type="checkbox"  name="check" id="nodejs" onclick="one(this)">
+                    <label for="nodejs" style="margin-right:40px;">Node.js</label>
+
+                    <input type="checkbox"  name="check" id="reactjs" onclick="one(this)">
+                    <label for="reactjs">React.js</label>
+                </div>
+
+                <div class="check-1">
+                    <input type="checkbox" name="check" id="nextjs" onclick="one(this)">
+                    <label for="nextjs" style="margin-right:45px;">Next.js</label>
+
+                    <input type="checkbox" name="check" id="typescript" onclick="one(this)"> 
+                    <label for="typescript">Typescript.js</label>
+                </div>
+            </div>
+            <div class="wrap-input">
+                <label>Upload File</label>
+                <input type="file" id="uploadFile" required style="background: #fff;"></input>
+            </div>
 
                <div class="btn">
-                   <button type="submit" onclick="submitData()">
+                   <button type="submit">
                        Contact
                    </button>
                 </div> 
            </form>
+    </div>
+    <hr class="line">
+    <div class="container" >
+        <h2>My Project</h2>
+    <div class="myproject" id="project">
+        <!-- <div class="card">
+            <img src="img/myphoto.jpg" width="100%" height="200px" style="object-fit: cover">
+            <div class="article">
+                <h1>Hello</h1>
+                <span>time</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed perspiciatis fugiat ad atque, quod voluptate quas magni veniam optio.</p>
+            </div>
+            <div class="icon">
+                <img src="icon-svg/nodejs.svg" alt="">
+            </div>
+            <div class="btn-card">
+                <a href="">Edit</a>
+                <a href="">Delete</a>
+            </div>
+        </div> -->
     </div>
 
 <script src="script.js"></script>
