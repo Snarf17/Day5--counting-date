@@ -165,6 +165,7 @@ form{
     width: 70%;
     flex-wrap: wrap;
     margin: auto;
+    /* overflow: hidden; */
 }
 .card{
     width: 280px;
@@ -179,6 +180,7 @@ form{
 .article{
     padding: 0px 7px;
     /* line-height: 0px; */
+    overflow: hidden;
 }
 .article span{
     top: 0;
