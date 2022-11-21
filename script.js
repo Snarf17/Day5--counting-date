@@ -72,7 +72,7 @@ function renderProject() {
         <img src="${data[i].nextjsIcon}" width="60px">
         </div>
         <div class="btn-card">
-            <a href="">Edit</a>
+            <a href="project-detail.html">Edit</a>
             <a href="">Delete</a>
         </div>
     </div>`

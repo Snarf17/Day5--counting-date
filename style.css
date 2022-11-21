@@ -208,6 +208,10 @@ form{
 .icon{
     padding: 10px;
 }
+.container-card{
+    text-decoration: none;
+    color: #000;
+}
 
 /* Main Web Apps */
 main{

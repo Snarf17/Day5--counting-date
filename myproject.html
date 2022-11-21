@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Task 4</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><img src="img/logo.png" width="55px"></li>
+            <li><a href="index.html" class="active" style="color: orangered">Home</a></li>
+            <li><a href="myproject.html">My Project</a></li>
+        </ul>
+        <a href="form.html" class="btn-contact">Contact Me</a>        
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="container-form">
+        <!-- <center> -->
+            <form onsubmit="addProject(event)">
+                <h2>GET IN <span style="color: orangered;">TOUCH</span> </h2>   
+
+            <div class="wrap-input">
+                <label>Name Project</label>
+                <input type="text" placeholder="Input your name..." id="nameProject"  value="test" required>
+            </div>    
+
+            <div class="wrap-input-date">
+                <div class="wrapper-date">
+                    <label>Start Date</label>
+                    <input type="date" placeholder="Please  input your Email..." id="startDate" required>
+                </div> 
+
+                <div class="wrapper-date">
+                    <label>End Date</label>
+                    <input type="date" placeholder="Please input your Email..." id="endDate" required>
+                </div>
+            </div>   
+
+            <div class="wrap-input">
+                <label>Description</label>
+                <textarea placeholder="What do you think..." id="desc" required></textarea>
+            </div>
+
+            <div class="wrap-checkbox">
+                <label for="">Technologies</label>
+                
+                <div class="check-1">
+                    <input type="checkbox"  name="check" id="nodejs" onclick="one(this)">
+                    <label for="nodejs" style="margin-right:40px;">Node.js</label>
+
+                    <input type="checkbox"  name="check" id="reactjs" onclick="one(this)">
+                    <label for="reactjs">React.js</label>
+                </div>
+
+                <div class="check-1">
+                    <input type="checkbox" name="check" id="nextjs" onclick="one(this)">
+                    <label for="nextjs" style="margin-right:45px;">Next.js</label>
+
+                    <input type="checkbox" name="check" id="typescript" onclick="one(this)"> 
+                    <label for="typescript">Typescript.js</label>
+                </div>
+            </div>
+            <div class="wrap-input">
+                <label>Upload File</label>
+                <input type="file" id="uploadFile" required style="background: #fff;"></input>
+            </div>
+
+               <div class="btn">
+                   <button type="submit">
+                       Contact
+                   </button>
+                </div> 
+           </form>
+    </div>
+    <hr class="line">
+    <div class="container" >
+        <h2>My Project</h2>
+    <div class="myproject" id="project">
+        <!-- <div class="card">
+            <img src="img/myphoto.jpg" width="100%" height="200px" style="object-fit: cover">
+            <div class="article">
+                <h1>Hello</h1>
+                <span>time</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed perspiciatis fugiat ad atque, quod voluptate quas magni veniam optio.</p>
+            </div>
+            <div class="icon">
+                <img src="icon-svg/nodejs.svg" alt="">
+            </div>
+            <div class="btn-card">
+                <a href="">Edit</a>
+                <a href="">Delete</a>
+            </div>
+        </div> -->
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
